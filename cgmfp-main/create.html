@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendupatta</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="side" id='side'></div>
+
+    <div class="container" id="main-container">
+        <div id="header"></div>
+        <div id="navtop"></div>
+        <aside id="aside">
+
+
+            <div class="create-page">
+                <h2>Create Munshi Members and Users account</h2>
+                <form id="userForm">
+            
+                    <input type="text" id="name" name="name" placeholder="Enter Users Name " required>
+            
+            
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Users Phone Number" required>
+            
+                    <input type="text" id="adhar" name="adhar" placeholder="Enter Users Adhar Number" required>
+            
+            
+                    <input type="email" id="email" name="email" placeholder="Enter Users Email" required>
+                    <!-- <label for="">Enter Users Date Of Birth</label> -->
+                    <input type="date" id="dob" name="dob" placeholder="10 apr 2002" required>
+                    <br>
+                    <select id="gaaon" name="gaaon">
+                        <option value="">Select Fadname</option>
+                        <option value="village1">Village 1</option>
+                        <option value="village2">Village 2</option>
+                       
+                    </select>
+                    <select id="gender" name="gender">
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <select id="usertype" name="usertype" onchange="toggleFields()">
+                        <option value="">User Type</option>
+                        <option value="user">User</option>
+                        <option value="munshi">Munshi</option>
+                        <option value="member">Member</option>
+                    </select>
+            
+                    <div id="extraFields">
+                        <input type="file" id="photo" name="photo">
+                    </div>
+            
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </form>
+
+         </div>
+
+
+        <div class="noti-page" id="noti-page"></div>
+        </aside>
+        <div id="footer" class="footer"></div>
+    </div>
+<script src="main.js"></script>
+</body>
+
+</html>
